@@ -1,0 +1,43 @@
+ <script>
+
+	
+		
+		for(var i = 0; i < 13; i++){
+		
+		var rating = 0;
+		
+		var a = Math.floor(Math.random() * 100);
+		var b = Math.floor(Math.random() * 100);
+		 
+		 if(a < 10){
+		  var a = a + 10;
+		 }
+		 
+		 if(b < 10){
+		  var b = b + 10;
+		 }
+		 
+		 var g = +prompt( a + " * " + b + ' = ?');
+		 
+		 if(g == a * b){
+			alert('good');
+			rating++;
+			
+		 }else{
+			 
+				alert("WRONG, ответ: " + a*b);
+			 }
+		 
+		};
+		
+		var d = 7;
+		
+		if(d < rating){
+
+		   alert("yes you are smart,  количество правельных ответов: " + rating);
+		   
+		}else{
+		   alert("yes you are stupid,  количество правельных ответов: " + rating);
+		}
+	
+	 </script>
